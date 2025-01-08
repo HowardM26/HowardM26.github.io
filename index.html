@@ -9,151 +9,115 @@
 
   <title>Howard's Portfolio</title>
 
-  <!-- Bootstrap core CSS -->
-  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Link to your CSS -->
+  <link href="css/resume.css" rel="stylesheet">
 
-  <!-- Custom fonts -->
+  <!-- Bootstrap core CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Saira+Extra+Condensed:100,200,300,400,500,600,700,800,900" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
 
-  <!-- Font Awesome (CDN) -->
+  <!-- Font Awesome -->
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
 
-  <!-- Devicons (CDN) -->
+  <!-- Devicons -->
   <link href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" rel="stylesheet">
-
-  <!-- Custom styles for this template -->
-  <link href="css/resume.min.css" rel="stylesheet">
-
-  <style>
-    /* Hero Section */
-    .hero-section {
-      background-image: url('https://images.unsplash.com/photo-1536183922588-166604504d5e?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fG9jZWFuJTIwbmlnaHR8ZW58MHx8MHx8fDA%3D'); /* Placeholder image */
-      background-size: cover;
-      background-position: center;
-      color: #fff;
-      text-align: center;
-      padding: 100px 0;
-    }
-    .hero-section h1 {
-      font-size: 3em;
-      font-weight: 700;
-    }
-    .hero-section p {
-      font-size: 1.2em;
-      margin-bottom: 20px;
-    }
-    .hero-btn {
-      padding: 10px 30px;
-      font-size: 1.2em;
-      background-color: #007bff;
-      color: #fff;
-      border: none;
-      border-radius: 5px;
-      text-decoration: none;
-    }
-    .hero-btn:hover {
-      background-color: #0056b3;
-    }
-  </style>
 </head>
 
 <body>
-    <!-- Hero Section -->
-    <section class="hero-section">
-      <div class="container">
-        <h1>Welcome</h1>
-        <p>Explore my journey as a software developer, Data Analyst at Amazon, and Full Stack Development enthusiast.</p>
-        <a href="#about" class="hero-btn">Learn More About Me</a>
+  <!-- Hero Section -->
+  <section class="hero-section">
+    <div class="container">
+      <h1>Welcome</h1>
+      <p>I'm Howard Mell, a Software Developer, Data Analyst at Amazon, and Full Stack Development enthusiast. Let's build something amazing together!</p>
+      <a href="#about" class="hero-btn">Learn More About Me</a>
+    </div>
+  </section>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
       </div>
-    </section>
+    </div>
+  </nav>
 
-    <!-- Navigation and Content Sections -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <!-- About Section -->
-    <section id="about" class="container mt-5">
-        <h1>Hi</h1>
-        <p>
-           My name is Howard Mell and I'm accustomed to leading teams ranging from 5-20 in a fast-paced environment, utilizing strong communication skills to adapt to changing priorities and ensure project success. Dependable and empathetic, with the ability to foster positive team dynamics while handling multiple projects simultaneously with a high degree of accuracy. A critical thinker who remains precise and analytical in decision-making. Eager to secure an entry-level software developer position where my adaptability, dependability, and teamwork can contribute to achieving company goals.
-        </p>
-    </section>
-
-    <section id="skills" class="container mt-5">
-        <h2>Technical Skills</h2>
-        <ul>
-            <li>Java, HTML, CSS, JavaScript, Spring Boot, Vue.js</li>
-            <li>JDBC, Table Design, SQL, PostgreSQL, E/R diagrams</li>
-            <li>Agile, Unit Testing (JUnit), Integration Testing</li>
-            <li>Git, IntelliJ</li>
-        </ul>
-    </section>
-
-    <section id="projects" class="container mt-5">
-        <h2>Technical Projects</h2>
-        <h3>WavyHauzTrts</h3>
-        <p>Bakery website to allow customers to view delectable desserts and place orders.</p>
-        <ul>
-            <li>Technologies: HTML, CSS, JavaScript, React.js</li>
-            <li>Utilized JSON Web Tokens and local storage to store encrypted user information client-side.</li>
-            <li>Gives users a selection of different treats to purchase using a card system in React.</li>
-            <li>Allows customers to subscribe to updates from the shop.</li>
-        </ul>
-        
-        <h3>World of Digital Banking</h3>
-        <p>A single-page application showing real-time updates on cryptocurrency values.</p>
-        <ul>
-            <li>Technologies: HTML, CSS, JSON, Bootstrap</li>
-            <li>Gives users access to current cryptocurrency prices using a real-time updating API.</li>
-            <li>Provided information on what cryptocurrency is and how it is created.</li>
-        </ul>
-    </section>
-
-   
-   
-
-        
-    </section>
-
-    <!-- Contact Section -->
-<section id="contact" class="container">
-  <h2>Contact</h2>
-  <div class="contact-info">
+  <!-- About Section -->
+  <section id="about" class="container mt-5">
+    <h1>Hi</h1>
     <p>
-      <i class="fa fa-phone" aria-hidden="true"></i> 
-    <strong>Phone:</strong> <a href="tel:8042991861">804-299-1861</a><br>
-    
-    <i class="fa fa-envelope" aria-hidden="true"></i> 
-    <strong>Email:</strong> <a href="mailto:mell_howard@yahoo.com">mell_howard@yahoo.com</a><br>
-      <strong>LinkedIn: </strong>
-      <a href="https://linkedin.com/in/mellhoward" target="_blank">
-        <i class="fa fa-linkedin" style="font-size: 1.3em; color: #0077b5; margin-right: 8px;"></i>
-      </a><br>
-     <strong>GitHub:</strong> 
-      <a href="https://github.com/HowardM26" target="_blank">
-        <i class="fa fa-github" style="font-size: 1.3em; color: #333; margin-right: 8px;"></i>
-      </a><br>
+      My name is Howard Mell, and I'm accustomed to leading teams ranging from 5-20 in a fast-paced environment, utilizing strong communication skills to adapt to changing priorities and ensure project success. Dependable and empathetic, with the ability to foster positive team dynamics while handling multiple projects simultaneously with a high degree of accuracy. A critical thinker who remains precise and analytical in decision-making. Eager to secure an entry-level software developer position where my adaptability, dependability, and teamwork can contribute to achieving company goals.
     </p>
-  </div>
-</section>
+  </section>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Skills Section -->
+  <section id="skills" class="container mt-5">
+    <h2>Technical Skills</h2>
+    <ul>
+      <li>Java, HTML, CSS, JavaScript, Spring Boot, Vue.js</li>
+      <li>JDBC, Table Design, SQL, PostgreSQL, E/R diagrams</li>
+      <li>Agile, Unit Testing (JUnit), Integration Testing</li>
+      <li>Git, IntelliJ</li>
+    </ul>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="container mt-5">
+    <h2>Technical Projects</h2>
+    <h3>WavyHauzTrts</h3>
+    <p>Bakery website to allow customers to view delectable desserts and place orders.</p>
+    <ul>
+      <li>Technologies: HTML, CSS, JavaScript, React.js</li>
+      <li>Utilized JSON Web Tokens and local storage to store encrypted user information client-side.</li>
+      <li>Gives users a selection of different treats to purchase using a card system in React.</li>
+      <li>Allows customers to subscribe to updates from the shop.</li>
+    </ul>
+
+    <h3>World of Digital Banking</h3>
+    <p>A single-page application showing real-time updates on cryptocurrency values.</p>
+    <ul>
+      <li>Technologies: HTML, CSS, JSON, Bootstrap</li>
+      <li>Gives users access to current cryptocurrency prices using a real-time updating API.</li>
+      <li>Provided information on what cryptocurrency is and how it is created.</li>
+    </ul>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="container">
+    <h2>Contact</h2>
+    <div class="contact-info">
+      <p>
+        <i class="fa fa-phone" aria-hidden="true"></i>
+        <strong>Phone:</strong> <a href="tel:8042991861">804-299-1861</a><br>
+        <i class="fa fa-envelope" aria-hidden="true"></i>
+        <strong>Email:</strong> <a href="mailto:mell_howard@yahoo.com">mell_howard@yahoo.com</a><br>
+        <i class="fa fa-linkedin" style="color: #0077b5;"></i>
+        <strong>LinkedIn:</strong> <a href="https://linkedin.com/in/mellhoward" target="_blank">Howard Mell</a><br>
+        <i class="fa fa-github" style="color: #333;"></i>
+        <strong>GitHub:</strong> <a href="https://github.com/HowardM26" target="_blank">HowardM26</a><br>
+      </p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Howard Mell | <a href="#contact">Contact Me</a></p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>

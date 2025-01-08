@@ -1,141 +1,153 @@
-/*!
- * Updated Resume Styles
- */
- body {
-  font-family: 'Roboto', sans-serif; /* Switched to a more modern font */
-  padding-top: 54px;
-  color: #555555; /* Slightly darker text for better legibility */
+/* General Reset */
+body, h1, h2, h3, p, ul, li, a {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (min-width: 992px) {
-  body {
-    padding-top: 0;
-    padding-left: 17rem;
-  }
+body {
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.6;
+  background-color: aqua;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed; /* Optional: Keeps the image static on scroll */
+  background-repeat: no-repeat;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'Saira Condensed', sans-serif; /* Kept the existing font for headings */
+/* Hero Section */
+.hero-section {
+  background-image: url('/img/RetroTech.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+}
+
+.hero-section h1 {
+  font-size: 3em;
   font-weight: 700;
-  text-transform: uppercase;
-  color: #2c3e50; /* Darkened heading color for better contrast */
 }
 
-h1 {
-  font-size: 5rem; /* Adjusted for better readability */
-  line-height: 5rem;
+.hero-section p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.hero-btn {
+  padding: 10px 30px;
+  font-size: 1.2em;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.hero-btn:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Navigation */
+.navbar {
+  background-color: #f8f9fa;
+  border-bottom: 1px solid #e7e7e7;
+}
+
+.navbar-nav .nav-link {
+  font-size: 1.1em;
+  padding: 10px;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #007bff;
+}
+
+/* Sections */
+section {
+  padding: 60px 15px;
 }
 
 h2 {
-  font-size: 3rem; 
+  margin-bottom: 20px;
+  font-size: 2em;
+  color: #007bff;
 }
 
-.subheading {
-  text-transform: uppercase;
-  font-weight: 500;
-  font-family: 'Roboto', sans-serif; /* Matches body font for consistency */
-  font-size: 1.25rem; 
-  color: #32cd32; /* Green accent for subheadings */
+/* Skills Section */
+#skills ul {
+  list-style-type: square;
+  padding-left: 20px;
 }
 
-.list-social-icons a {
-  color: #495057;
-  transition: all 0.3s ease; /* Smooth transition on hover */
-}
-.list-social-icons a:hover {
-  color: #32cd32;
-  transform: scale(1.1); /* Slight zoom effect */
+#skills li {
+  margin-bottom: 10px;
 }
 
-.list-icons {
-  font-size: 3rem;
-}
-.list-icons .list-inline-item i:hover {
-  color: #32cd32;
-  background-color: #f8f9fa; /* Subtle background highlight */
-  border-radius: 50%; /* Circular hover effect */
-  padding: 0.2rem;
+/* Projects Section */
+#projects h3 {
+  margin-top: 20px;
+  font-size: 1.5em;
+  color: #0056b3;
 }
 
-#sideNav .navbar-nav .nav-item .nav-link {
-  font-weight: 600;
-  text-transform: uppercase;
-  color: #868e96;
-  transition: color 0.3s ease;
-}
-#sideNav .navbar-nav .nav-item .nav-link:hover {
-  color: #32cd32; /* Green accent on hover */
+#projects ul {
+  padding-left: 20px;
 }
 
-@media (min-width: 992px) {
-  #sideNav {
-    text-align: center;
-    position: fixed;
-    top: 0;
-    left: 0;
-    display: flex;
+/* Contact Section */
+.contact-info i {
+  margin-right: 10px;
+  color: #007bff;
+}
+
+.contact-info a {
+  color: #333;
+  text-decoration: none;
+}
+
+.contact-info a:hover {
+  color: #007bff;
+  text-decoration: underline;
+}
+
+/* Footer */
+footer {
+  background-color: #f8f9fa;
+  text-align: center;
+  padding: 15px 0;
+  border-top: 1px solid #e7e7e7;
+}
+
+footer p {
+  margin: 0;
+  font-size: 0.9em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hero-section h1 {
+    font-size: 2.5em;
+  }
+
+  .hero-section p {
+    font-size: 1em;
+  }
+
+  .hero-btn {
+    font-size: 1em;
+    padding: 8px 20px;
+  }
+
+  nav ul {
     flex-direction: column;
-    width: 17rem;
-    height: 100vh;
-    background-color: #ffffff; /* Added white background for better contrast */
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    align-items: center;
   }
-  #sideNav .navbar-brand {
-    display: flex;
-    margin: auto auto 0;
-    padding: 0.5rem;
-  }
-  #sideNav .navbar-brand .img-profile {
-    max-width: 8rem; /* Reduced size for a cleaner look */
-    border: 0.3rem solid rgba(255, 255, 255, 0.2);
+
+  #skills ul, #projects ul {
+    padding-left: 10px;
   }
 }
-
-section.resume-section {
-  border-bottom: 1px solid #dee2e6;
-  padding-top: 4rem !important;
-  padding-bottom: 4rem !important;
-}
-section.resume-section .resume-item .resume-date {
-  min-width: none;
-  color: #868e96;
-  font-style: italic; /* Italicized date for subtle emphasis */
-}
-
-@media (min-width: 768px) {
-  section.resume-section {
-    min-height: 100vh;
-  }
-  section.resume-section .resume-item .resume-date {
-    min-width: 18rem;
-  }
-}
-
-@media (min-width: 992px) {
-  section.resume-section {
-    padding-top: 3rem !important;
-    padding-bottom: 3rem !important;
-  }
-}
-
-.bg-primary {
-  background-color: #32cd32 !important; /* Green background */
-}
-
-.text-primary {
-  color: #32cd32 !important; /* Green text */
-}
-
-a {
-  color: #32cd32;
-  transition: all 0.3s ease; /* Smooth hover animation */
-}
-a:hover, a:focus, a:active {
-  color: #228b22; /* Darker green for hover state */
-}
-
