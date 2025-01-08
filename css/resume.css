@@ -1,17 +1,18 @@
 /*!
- * Start Bootstrap - Resume v4.0.0-beta.2 (https://startbootstrap.com/template-overviews/resume)
- * Copyright 2013-2017 Start Bootstrap
- * Licensed under MIT (https://github.com/BlackrockDigital/startbootstrap-resume/blob/master/LICENSE)
+ * Updated Resume Styles
  */
-body {
-  font-family: 'Open Sans', serif;
+ body {
+  font-family: 'Roboto', sans-serif; /* Switched to a more modern font */
   padding-top: 54px;
-  color: #868e96; }
+  color: #555555; /* Slightly darker text for better legibility */
+}
 
 @media (min-width: 992px) {
   body {
     padding-top: 0;
-    padding-left: 17rem; } }
+    padding-left: 17rem;
+  }
+}
 
 h1,
 h2,
@@ -19,39 +20,57 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Saira Extra Condensed', serif;
+  font-family: 'Saira Condensed', sans-serif; /* Kept the existing font for headings */
   font-weight: 700;
   text-transform: uppercase;
-  color: #343a40; }
+  color: #2c3e50; /* Darkened heading color for better contrast */
+}
 
 h1 {
-  font-size: 6rem;
-  line-height: 5.5rem; }
+  font-size: 5rem; /* Adjusted for better readability */
+  line-height: 5rem;
+}
 
 h2 {
-  font-size: 3.5rem; }
+  font-size: 3rem; 
+}
 
 .subheading {
   text-transform: uppercase;
   font-weight: 500;
-  font-family: 'Saira Extra Condensed', serif;
-  font-size: 1.35rem; }
+  font-family: 'Roboto', sans-serif; /* Matches body font for consistency */
+  font-size: 1.25rem; 
+  color: #32cd32; /* Green accent for subheadings */
+}
 
 .list-social-icons a {
-  color: #495057; }
-  .list-social-icons a:hover {
-    color: #32cd32; }
-  .list-social-icons a .fa-lg {
-    font-size: 1.75rem; }
+  color: #495057;
+  transition: all 0.3s ease; /* Smooth transition on hover */
+}
+.list-social-icons a:hover {
+  color: #32cd32;
+  transform: scale(1.1); /* Slight zoom effect */
+}
 
 .list-icons {
-  font-size: 3rem; }
-  .list-icons .list-inline-item i:hover {
-    color: #32cd32; }
+  font-size: 3rem;
+}
+.list-icons .list-inline-item i:hover {
+  color: #32cd32;
+  background-color: #f8f9fa; /* Subtle background highlight */
+  border-radius: 50%; /* Circular hover effect */
+  padding: 0.2rem;
+}
 
 #sideNav .navbar-nav .nav-item .nav-link {
   font-weight: 600;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  color: #868e96;
+  transition: color 0.3s ease;
+}
+#sideNav .navbar-nav .nav-item .nav-link:hover {
+  color: #32cd32; /* Green accent on hover */
+}
 
 @media (min-width: 992px) {
   #sideNav {
@@ -62,54 +81,61 @@ h2 {
     display: flex;
     flex-direction: column;
     width: 17rem;
-    height: 100vh; }
-    #sideNav .navbar-brand {
-      display: flex;
-      margin: auto auto 0;
-      padding: 0.5rem; }
-      #sideNav .navbar-brand .img-profile {
-        max-width: 10rem;
-        max-height: 10rem;
-        border: 0.5rem solid rgba(255, 255, 255, 0.2); }
-    #sideNav .navbar-collapse {
-      display: flex;
-      align-items: flex-start;
-      flex-grow: 0;
-      width: 100%;
-      margin-bottom: auto; }
-      #sideNav .navbar-collapse .navbar-nav {
-        flex-direction: column;
-        width: 100%; }
-        #sideNav .navbar-collapse .navbar-nav .nav-item {
-          display: block; }
-          #sideNav .navbar-collapse .navbar-nav .nav-item .nav-link {
-            display: block; } }
+    height: 100vh;
+    background-color: #ffffff; /* Added white background for better contrast */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  }
+  #sideNav .navbar-brand {
+    display: flex;
+    margin: auto auto 0;
+    padding: 0.5rem;
+  }
+  #sideNav .navbar-brand .img-profile {
+    max-width: 8rem; /* Reduced size for a cleaner look */
+    border: 0.3rem solid rgba(255, 255, 255, 0.2);
+  }
+}
 
 section.resume-section {
   border-bottom: 1px solid #dee2e6;
-  padding-top: 5rem !important;
-  padding-bottom: 5rem !important; }
-  section.resume-section .resume-item .resume-date {
-    min-width: none; }
+  padding-top: 4rem !important;
+  padding-bottom: 4rem !important;
+}
+section.resume-section .resume-item .resume-date {
+  min-width: none;
+  color: #868e96;
+  font-style: italic; /* Italicized date for subtle emphasis */
+}
 
 @media (min-width: 768px) {
   section.resume-section {
-    min-height: 100vh; }
-    section.resume-section .resume-item .resume-date {
-      min-width: 18rem; } }
+    min-height: 100vh;
+  }
+  section.resume-section .resume-item .resume-date {
+    min-width: 18rem;
+  }
+}
 
 @media (min-width: 992px) {
   section.resume-section {
     padding-top: 3rem !important;
-    padding-bottom: 3rem !important; } }
+    padding-bottom: 3rem !important;
+  }
+}
 
 .bg-primary {
-  background-color: #32cd32 !important; }
+  background-color: #32cd32 !important; /* Green background */
+}
 
 .text-primary {
-  color: #32cd32 !important; }
+  color: #32cd32 !important; /* Green text */
+}
 
 a {
-  color: #32cd32; }
-  a:hover, a:focus, a:active {
-    color: #32cd32; }
+  color: #32cd32;
+  transition: all 0.3s ease; /* Smooth hover animation */
+}
+a:hover, a:focus, a:active {
+  color: #228b22; /* Darker green for hover state */
+}
+
